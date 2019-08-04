@@ -400,8 +400,10 @@ int main(int argc, char** argv) {
   create_window();
   
   drawImage(imgOriginal);
+    
+    cv::namedWindow(WINDOW_NAME.c_str());
 
-  while (cv::namedWindow(WINDOW_NAME.c_str()) != 0)
+  while ( 1)
   {
 
     char c = waitKey(15);
