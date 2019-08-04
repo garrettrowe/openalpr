@@ -254,7 +254,7 @@ int main( int argc, const char** argv )
 
         cv::VideoCapture cap = cv::VideoCapture();
         cap.open(filename);
-        cap.set(CAP_PROP_POS_MSEC, seektoms);
+        cap.set(CAP_PROP_POS_MSE, seektoms);
 
         while (cap.read(frame))
         {
