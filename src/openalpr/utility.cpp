@@ -565,7 +565,7 @@ int levenshteinDistance (const std::string &s1, const std::string &s2, int max)
     drawContours(innerArea, contours,
                  contourIndex, // draw this contour
                  cv::Scalar(255,255,255), // in
-                 CV_FILLED,
+                 FILLED,
                  8,
                  hierarchy,
                  2
