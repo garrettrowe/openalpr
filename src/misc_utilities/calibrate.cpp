@@ -401,7 +401,7 @@ int main(int argc, char** argv) {
   
   drawImage(imgOriginal);
 
-  while (cvGetWindowHandle(WINDOW_NAME.c_str()) != 0)
+  while (cv::namedWindow(WINDOW_NAME.c_str()) != 0)
   {
 
     char c = waitKey(15);
@@ -417,7 +417,7 @@ int main(int argc, char** argv) {
 
   }
 
-  cvDestroyAllWindows();
+    cv::destroyAllWindows();
   
   
   return 0;
