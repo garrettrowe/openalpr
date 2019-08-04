@@ -94,10 +94,10 @@ namespace alpr
           circle(imgCorners, textLines[linenum].textArea[i], 2, Scalar(0, 0, 0));
       }
 
-      line(imgCorners, this->bestTop.p1, this->bestTop.p2, Scalar(255, 0, 0), 1, AA);
-      line(imgCorners, this->bestRight.p1, this->bestRight.p2, Scalar(0, 0, 255), 1, AA);
-      line(imgCorners, this->bestBottom.p1, this->bestBottom.p2, Scalar(0, 0, 255), 1, AA);
-      line(imgCorners, this->bestLeft.p1, this->bestLeft.p2, Scalar(255, 0, 0), 1, AA);
+      line(imgCorners, this->bestTop.p1, this->bestTop.p2, Scalar(255, 0, 0), 1, 16);
+      line(imgCorners, this->bestRight.p1, this->bestRight.p2, Scalar(0, 0, 255), 1, 16);
+      line(imgCorners, this->bestBottom.p1, this->bestBottom.p2, Scalar(0, 0, 255), 1, 16);
+      line(imgCorners, this->bestLeft.p1, this->bestLeft.p2, Scalar(255, 0, 0), 1, 16);
 
       displayImage(pipelineData->config, "Winning top/bottom Boundaries", imgCorners);
     }
