@@ -69,7 +69,7 @@ namespace alpr
     
     if (frame.channels() > 2)
     {
-      cvtColor( frame, frame_gray, CV_BGR2GRAY );
+      cvtColor( frame, frame_gray, cv::COLOR_BGR2GRAY );
     }
     else
     {
